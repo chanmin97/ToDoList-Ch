@@ -1,0 +1,99 @@
+body {
+    font-family: "Rajdhani", sans-serif;
+    margin:0;
+    background-image: url("images/backgroundcat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: aliceblue;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    min-height: 100vh;
+    opacity: 0.9;
+    border-top: 10px solid rgb(111, 178, 241);
+    border-bottom: 10px solid rgb(111, 178, 241);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.task-tabs{
+    display: flex;
+    border-bottom: 2px solid rgb(180, 215, 248);
+    position: relative;
+}
+
+.task-tabs div {
+    padding: 1em;
+}
+
+.task-area {
+    border: 2px solid rgb(180, 215, 248);
+}
+
+#under-line {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 4px;
+    width:0;
+    border-radius: 0px;
+    transition: 0.3s;
+    background-color:rgb(111, 178, 241);
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid rgb(111, 178, 241);
+}
+
+.task-done{
+    text-decoration: line-through;
+    
+}
+
+.taskDoneBack{
+    background-color: darkgrey;
+    width: auto;
+}
+
+.buttonBackground{
+    background-color: transparent;
+    border-radius: 30px;
+    border-color:transparent;
+    height: 100%;
+    width: 5em;
+}
+
+.buttonBackground:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.task-tabs div {
+    cursor: pointer;
+}
+
+#task-input {
+    margin-bottom: 15px;
+    width: 80%;
+    border: none;
+    border: 1px solid rgb(111, 178, 241);
+}
+
+.button-add{
+    border: none;
+    color:aliceblue;
+    background-color: rgb(111, 178, 241);
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    height: 34px;
+    margin-top: 1px;
+}
+
+.button-add:hover{
+    background-color:rgba(0, 89, 255, 0.692) ;
+}
